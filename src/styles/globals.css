@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-teal: #00AFA3;
+    --color-navy: #0A2342;
+    --color-grey: #F5F7FA;
+    --color-teal-light: #E0F7F5;
+    --color-teal-dark: #008A81;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-white text-gray-900;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  p {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    font-weight: 400;
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2.25rem;
+    }
+
+    h2 {
+      font-size: 1.875rem;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+}
